@@ -2,20 +2,20 @@
 
 <TinyMCEInput> component for react-admin, useful for editing HTML in admin GUIs.
 
-Binding of [`<TinyMCE />`](https://github.com/instructure-react/react-tinymce) for [react-admin](https://marmelab.com/react-admin/).
+Binding of [`<Editor />`](https://github.com/tinymce/tinymce-react) for [react-admin](https://marmelab.com/react-admin/).
 
-This is a fork of [aor-tinymce-input](https://github.com/LoicMahieu/aor-tinymce-input), changed to work on latest react-admin rather than admin-on-rest.
+This is a fork of [aor-tinymce-input](https://github.com/LoicMahieu/aor-tinymce-input), changed to use the official tinyMCE react-integration.
 
 ## Installation
 
 ```sh
-npm install aor-tinymce-input --save
+npm install @palustris/tinymce-input --save
 ```
 
 or 
 
 ```sh
-yarn add aor-tinymce-input
+yarn add @palustris/tinymce-input
 ```
 
 ## Usage
@@ -23,15 +23,10 @@ yarn add aor-tinymce-input
 ```js
 import React from 'react';
 import {SimpleForm, Edit, TextInput } from 'ra-ui-materialui';
-
-import tinymce from 'tinymce/tinymce';
-// react-tinymce use global ref
-window.tinymce = tinymce;
-
 import 'tinymce/themes/modern/theme';
 import 'tinymce/skins/lightgray/skin.min.css';
 
-import TinyMCEInput from 'aor-tinymce-input';
+import TinyMCEInput from '@palustris/tinymce-input
 
 export const PostEdit = props=><Edit>
     <SimpleForm>
@@ -43,4 +38,4 @@ export const PostEdit = props=><Edit>
 
 ## License
 
-This library is licensed under the [MIT Licence](LICENSE), and sponsored by [Whitebolt](https://whitebolt.net).
+This library is licensed under the [MIT Licence](LICENSE)
