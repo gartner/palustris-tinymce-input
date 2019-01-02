@@ -1,6 +1,6 @@
 {
-  "name": "ra-tinymce-input",
-  "version": "1.2.3",
+  "name": "@palustris/tinymce-input",
+  "version": "1.0.0",
   "description": "<TinyMCEInput /> component for react-admin, useful for editing HTML in admin GUIs",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Whitebolt/ra-tinymce-input.git"
+    "url": "git+https://github.com/gartner/palustris-tinymce-input.git"
   },
   "keywords": [
     "reactjs",
@@ -26,7 +26,7 @@
     "tinymce",
     "react-admin"
   ],
-  "author": "Whitebolt <hello@whitebolt.net",
+  "author": "Mads Lie Jensen <mads@gartneriet.dk>",
   "contributors": [
     {
       "name": "Loic Mahieu"
@@ -42,9 +42,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Whitebolt/ra-tinymce-input/issues"
+    "url": "https://github.com/gartner/palustris-tinymce-input/issues"
   },
-  "homepage": "https://github.com/Whitebolt/ra-tinymce-input#readme",
+  "homepage": "https://github.com/gartner/palustris-tinymce-input#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -54,8 +54,12 @@
     "babel-preset-stage-0": "^6.16.0"
   },
   "dependencies": {
+    "@tinymce/tinymce-react": "^2.4.0",
+    "ra-core": "^2.5.2",
+    "react": "^16.0.0",
+    "react-admin": "^2.5.2",
+    "react-dom": "^16.7.0",
     "react-tinymce": "^0.7.0",
-    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "tinymce": "^4.7.13"
   }
 }
