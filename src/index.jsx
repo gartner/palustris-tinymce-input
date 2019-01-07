@@ -171,7 +171,8 @@ TinyMCEInput.defaultProps = {
     },
     toolbar: "",
     menubar: true,
-    plugins: ""
+    plugins: "",
+    label: "",
 };
 
 export default addField(TinyMCEInput);
