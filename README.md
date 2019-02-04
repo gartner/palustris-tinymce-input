@@ -1,4 +1,4 @@
-# `<TinyMCEInput>` for admin-on-rest
+# `<TinyMCEInput>` for react-admin
 
 <TinyMCEInput> component for react-admin, useful for editing HTML in admin GUIs.
 
@@ -28,12 +28,14 @@ import 'tinymce/skins/lightgray/skin.min.css';
 
 import TinyMCEInput from '@palustris/tinymce-input
 
-export const PostEdit = props=><Edit>
-    <SimpleForm>
-        <TextInput source="title" />
-        <TinyMCEInput source="content" plugins={["code"]} />
-    </SimpleForm>
-</Edit>;
+export const PostEdit = props=> (
+    <Edit>
+        <SimpleForm>
+            <TextInput source="title" />
+            <TinyMCEInput source="content" plugins={["code"]} />
+        </SimpleForm>
+    </Edit>
+);
 ```
 
 ## License
