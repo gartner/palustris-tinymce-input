@@ -26,7 +26,7 @@ import {SimpleForm, Edit, TextInput } from 'ra-ui-materialui';
 import 'tinymce/themes/modern/theme';
 import 'tinymce/skins/lightgray/skin.min.css';
 
-import TinyMCEInput from '@palustris/tinymce-input
+import TinyMCEInput from '@palustris/tinymce-input';
 
 export const PostEdit = props=> (
     <Edit>
