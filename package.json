@@ -55,11 +55,12 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
-    "@tinymce/tinymce-react": "^2.4.0",
+    "@tinymce/tinymce-react": "^2.6.1",
     "ra-core": "^2.5.2",
-    "react": "^16.0.0",
+    "react": "16.3.0",
     "react-admin": "^2.5.2",
+    "react-dom": "^16.8.1",
     "react-tinymce": "^0.7.0",
-    "tinymce": "^4.7.13"
+    "tinymce": "^5.0.0"
   }
 }
