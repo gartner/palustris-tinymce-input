@@ -145,7 +145,7 @@ TinyMCEInput.defaultProps = {
         height: 512,
         content_style: "a { color: #53B7E8; text-decoration: none }",
         plugins: "autolink code colorpicker fullscreen " + "image media link lists paste " + "preview table textcolor help",
-        menubar: "view edit insert format tools table", // See https://www.tiny.cloud/docs/advanced/editor-control-identifiers/
+        menubar: "view edit insert format tools table help", // See https://www.tiny.cloud/docs/advanced/editor-control-identifiers/
         toolbar: "undo redo | " +
             "styleselect | " +
             "bold italic | " +
