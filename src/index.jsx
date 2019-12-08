@@ -7,35 +7,36 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Editor} from '@tinymce/tinymce-react';
 import {addField, FieldTitle} from 'ra-core';
-import { Labeled } from 'react-admin';
+import {Labeled} from 'react-admin';
 
-const sanitizeRestProps = ({
-                               alwaysOn,
-                               basePath,
-                               component,
-                               defaultValue,
-                               formClassName,
-                               initializeForm,
-                               input,
-                               isRequired,
-                               label,
-                               locale,
-                               meta,
-                               options,
-                               optionText,
-                               optionValue,
-                               record,
-                               resource,
-                               allowEmpty,
-                               source,
-                               textAlign,
-                               translate,
-                               translateChoice,
-                               toolbar,
-                               menubar,
-                               plugins,
-                               ...rest
-                           }) => rest;
+const sanitizeRestProps = (
+    {
+        alwaysOn,
+        basePath,
+        component,
+        defaultValue,
+        formClassName,
+        initializeForm,
+        input,
+        isRequired,
+        label,
+        locale,
+        meta,
+        options,
+        optionText,
+        optionValue,
+        record,
+        resource,
+        allowEmpty,
+        source,
+        textAlign,
+        translate,
+        translateChoice,
+        toolbar,
+        menubar,
+        plugins,
+        ...rest
+    }) => rest;
 
 
 export class TinyMCEInput extends React.Component {
@@ -70,6 +71,7 @@ export class TinyMCEInput extends React.Component {
             type,
             config,
             menubar,
+            onChange,
             ...rest
         } = this.props;
         if (typeof meta === 'undefined') {
@@ -88,28 +90,12 @@ export class TinyMCEInput extends React.Component {
                 plugins={plugins}
                 toolbar={toolbar}
                 onChange={event => this.handleChange(event)}
+                {...rest}
             />
         </Labeled>
 
-        /*
-                return <TinyMCE
-                    margin="normal"
-                    type={type}
-                    label={<FieldTitle label={label} source={source} resource={resource} isRequired={isRequired} />}
-                    error={!!(touched && error)}
-                    helperText={touched && error}
-                    className={className}
-                    config={{plugins, menubar, toolbar, ...options}}
-                    content={value}
-                    {...options}
-                    {...input}
-                    {...sanitizeRestProps(rest)}
-                    onBlur={event=>this.handleBlur(event)}
-                    onFocus={event=>this.handleFocus(event)}
-                    onChange={event=>this.handleChange(event)}
-                />;*/
     }
-};
+}
 
 TinyMCEInput.propTypes = {
     className: PropTypes.string,
@@ -151,7 +137,7 @@ TinyMCEInput.defaultProps = {
             "bold italic | " +
             "fontselect | fontsizeselect | " +
             "alignleft aligncenter alignright alignjustify | " + "bullist numlist outdent indent | " + "link image | " + "forecolor backcolor",
-       // images_upload_handler: this.onEditorImageUpload,
+        // images_upload_handler: this.onEditorImageUpload,
         plugin_preview_height: 650, // default: 500,
         plugin_preview_width: 845, // default: 650,
         style_formats: [
@@ -176,4 +162,3 @@ TinyMCEInput.defaultProps = {
 };
 
 export default addField(TinyMCEInput);
-
