@@ -46,21 +46,38 @@
   },
   "homepage": "https://github.com/gartner/palustris-tinymce-input#readme",
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-react-jsx": "^6.8.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0",
-    "cross-env": "^5.2.0"
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.0",
+    "@babel/plugin-proposal-decorators": "^7.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0",
+    "@babel/plugin-proposal-function-bind": "^7.0",
+    "@babel/plugin-proposal-function-sent": "^7.0",
+    "@babel/plugin-proposal-json-strings": "^7.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0",
+    "@babel/plugin-syntax-import-meta": "^7.0",
+    "@babel/plugin-transform-react-jsx": "^7.0",
+    "@babel/preset-env": "^7.0",
+    "@babel/preset-react": "^7.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "cross-env": "^6.0.3"
+  },
+  "peerDependencies": {
+    "ra-core": "^3.0",
+    "react": "16.9",
+    "react-admin": "^3.0.0",
+    "react-dom": "^16.9.0"
   },
   "dependencies": {
-    "@tinymce/tinymce-react": "^2.6.1",
-    "ra-core": "^2.5.2",
-    "react": "16.3.0",
-    "react-admin": "^2.5.2",
-    "react-dom": "^16.8.1",
-    "react-tinymce": "^0.7.0",
+    "@tinymce/tinymce-react": "^3.3.0",
     "tinymce": "^5.0.0"
   }
 }
