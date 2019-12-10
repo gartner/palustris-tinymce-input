@@ -38,6 +38,11 @@ export const PostEdit = props=> (
 );
 ```
 
+## Building
+```shell script
+node_modules/.bin/babel src --out-dir lib
+```
+
 ## License
 
 This library is licensed under the [MIT Licence](LICENSE)
